@@ -33,3 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
             pip install --upgrade google-cloud-storage
+            cd /backend/
+            pip install -r requirements.txt -t lib
+            snap install google-cloud-sdk --classic
+            gcloud init

@@ -34,5 +34,5 @@ jobs:
         run: |
             pip install --upgrade google-cloud-storage
             pip install -r requirements.txt -t lib
-            snap install google-cloud-sdk --classic
+            sudo snap install google-cloud-sdk --classic
             gcloud init

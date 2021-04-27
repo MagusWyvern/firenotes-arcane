@@ -22,13 +22,13 @@ $(function(){
   // [START gae_python_firenotes_config]
   // Obtain the following from the "Add Firebase to your web app" dialogue
   // Initialize Firebase
-  var config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    projectId: "<PROJECT_ID>",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<MESSAGING_SENDER_ID>"
+  var firebaseConfig = {
+    apiKey: "AIzaSyBy0duiePE0RZ-rmUhgz3sLPDdHWFr1bFE",
+    authDomain: "firenotes-arcane.firebaseapp.com",
+    projectId: "firenotes-arcane",
+    storageBucket: "firenotes-arcane.appspot.com",
+    messagingSenderId: "370362103584",
+    appId: "1:370362103584:web:fa33f1a7e0c1c6253e0945"
   };
   // [END gae_python_firenotes_config]
 

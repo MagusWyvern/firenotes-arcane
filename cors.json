@@ -1,7 +1,7 @@
 [
   {
-    "origin": ["*"],
-    "responseHeader": ["Access-Control-Allow-Origin"],
+    "origin": ["http://firenotes-arcane.appspot.com"],
+    "responseHeader": ["Access-Control-Allow-Origin: http://firenotes-arcane.appspot.com/"],
     "method": ["GET", "HEAD", "DELETE", "OPTIONS"],
     "maxAgeSeconds": 3600
   }

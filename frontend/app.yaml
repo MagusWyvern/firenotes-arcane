@@ -14,13 +14,17 @@
 
 runtime: python27
 api_version: 1
+service: default
 threadsafe: true
-service: backend
 
 handlers:
-- url: /.*
-  script: main.app
 
-env_variables:
-  GAE_USE_SOCKETS_HTTPLIB : 'true'
-  PROJECT_ID: "firenotes-arcane" 
+# root
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /(.+)
+  static_files: \1
+  upload: (.+)
+

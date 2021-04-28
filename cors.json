@@ -1,0 +1,7 @@
+[
+  {
+    "origin": ["http://firenotes-arcane.appspot.com/"],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]

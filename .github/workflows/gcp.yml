@@ -25,15 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
       # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
+      - name: Install pip libraries
         run: |
             pip install --upgrade google-cloud-storage
-            pip install -r backend/requirements.txt -t lib
+            cd backend
+            pip install -r requirements.txt -t lib
             
       - name: Set up gcloud Cloud SDK environment
         uses: google-github-actions/setup-gcloud@v0.2.0

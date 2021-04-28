@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      
+     
 
       # Runs a set of commands using the runners shell
       - name: Install pip libraries
@@ -41,4 +43,8 @@ jobs:
           
       - name: Use gcloud CLI
         run:  gcloud app deploy backend/index.yaml frontend/app.yaml backend/app.yaml --project firenotes-arcane
+        
+      - name: Run cors
+        run: | 
+          gsutil cors set cors.json gs://firenotes-arcane.appspot.com
 

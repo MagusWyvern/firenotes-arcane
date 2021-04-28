@@ -17,7 +17,7 @@ $(function(){
   // deploying the application to a live production environment, change to
   // https://backend-dot-<PROJECT_ID>.appspot.com as specified in the
   // backend's app.yaml file.
-  var backendHostUrl = 'https://backend.firenotes-arcane.appspot.com';
+  var backendHostUrl = 'https://backend-dot-firenotes-arcane.appspot.com';
 
   // [START gae_python_firenotes_config]
   // Obtain the following from the "Add Firebase to your web app" dialogue

@@ -23,4 +23,4 @@ handlers:
 
 env_variables:
   GAE_USE_SOCKETS_HTTPLIB : 'true'
-  projectId: "firenotes-arcane" 
+  PROJECT_ID: "firenotes-arcane" 
